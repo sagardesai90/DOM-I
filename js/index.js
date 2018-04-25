@@ -121,26 +121,37 @@ textImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 // h4Content.innerHTML = siteContent["main-content"]["features-content"];
 // console.log(h4Content);
 
-//Bottom
+// Bottom
 let bottomContent = mainContent.getElementsByClassName("bottom-content")[0];
-let textContent2 = bottomContent.getElementsByClassName("text-content")[2];
+let textContent2 = bottomContent.getElementsByClassName("text-content")[0];
 console.log(textContent2);
 
-let mainFeatures = textContent.children[0];
-mainFeatures.innerHTML = siteContent["main-content"]["features-h4"];
-console.log(mainFeatures);
+let h4Services = textContent2.children[0];
+h4Services.innerHTML = siteContent["main-content"]["services-h4"];
+console.log(h4Services);
 
-let h4Bottom = textContent.children[1];
-h4Bottom.innerHTML = siteContent["main-content"]["features-content"];
-console.log(h4Bottom);
+let contentServices = textContent2.children[1];
+contentServices.innerHTML = siteContent["main-content"]["services-content"];
+console.log(contentServices);
 
-let textContent3 = topContent.getElementsByClassName("bottom-content")[3];
+let textContent3 = bottomContent.getElementsByClassName("text-content")[1];
 console.log(textContent3);
 
-let bottomAbout = textContent.children[0];
-bottomAbout.innerHTML = siteContent["main-content"]["about-h4"];
-console.log(bottomAbout);
+let h4Product = textContent3.children[0];
+h4Product.innerHTML = siteContent["main-content"]["product-h4"];
+console.log(h4Product);
 
-let mainContent2 = textContent.children[1];
-mainContent2.innerHTML = siteContent["main-content"]["about-content"];
-console.log(mainContent2);
+let contentProduct = textContent3.children[1];
+contentProduct.innerHTML = siteContent["main-content"]["product-content"];
+console.log(contentProduct);
+
+let textContent4 = bottomContent.getElementsByClassName("text-content")[2];
+console.log(textContent3);
+
+let h4Vision = textContent4.children[0];
+h4Vision.innerHTML = siteContent["main-content"]["vision-h4"];
+console.log(h4Vision);
+
+let contentVision = textContent4.children[1];
+contentVision.innerHTML = siteContent["main-content"]["vision-content"];
+console.log(contentVision);
